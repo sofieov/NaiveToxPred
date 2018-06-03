@@ -1,0 +1,1 @@
+##By evalue 1.00e-30: TP = 123, FP = 8900, TN = 61567, FN = 3, Accuracy = 0.87, PPV = 0.01, NPV = 1.00, Sensitivity = 0.98, Specificity = 0.87, F1 = 0.01, MCC = 0.1074
