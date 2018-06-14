@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """                                                                                                                                                                               
-Created on Wed Feb 28 15:56:02 2018                                                                                                                                         
+Created on Wed Mar 14 15:56:02 2018                                                                                                                                         
 @author: sofieolundvillumsen                                                                                                                                                         
 """
 
@@ -51,7 +51,7 @@ parser.add_argument("--Evalue",
                     default=1e-5)
 parser.add_argument("--SignalpStatus",
                     help="If input file contains both mature- and precursor protein sequences, then SignalpStatus should be False. Default = 'True'.",
-                    default=True,
+                    default='True',
                     required=False)
 parser.add_argument("--SignalpFile",
                     help="A General Feature Format (GFF) file from a SignalP run. The file is created by following command: signalp -n SignalpDataOut.txt <name on inputfile>.",
@@ -149,7 +149,7 @@ def EvalueCutOff(NamesInput, NamesBLAST, MatrixBLASTOutput):
             else:           
                 NonToxin1.append(MatrixBLASTOutput[i,0])       
 
-    if args.SignalpStatus is True: #If the sequences have signal peptides, then they are sorted additionally with help from the signalp server.
+    if args.SignalpStatus == 'True': #If the sequences have signal peptides, then they are sorted additionally with help from the signalp server.
         Toxin2=[]
         for i in range(len(Toxin1)):
             if Toxin1[i] in NamesSignalp:
@@ -405,7 +405,7 @@ def RunSignalp(InputFile):
     else:
         print('test')
         SignalpCmdOut=None
-        args.SignalpStatus=False
+        args.SignalpStatus='False'
     return SignalpCmdOut
 
 
@@ -458,7 +458,7 @@ else:
     SignalpCmd = args.SignalpFile
 
 
-if args.SignalpStatus is True:
+if args.SignalpStatus == 'True':
     NamesPos,NamesInput,MatrixSignalpOutput,NamesSignalp,MatrixBLASTOutput, NamesBLAST = LoadSeq(DataSetPos,args.InputFile,SignalpCmd,BLASTCmd)
     Toxin, NonToxin = EvalueCutOff(NamesInput,NamesBLAST,MatrixBLASTOutput)
     MatrixFinalOutput = UserOutput(NamesInput,NamesSignalp,MatrixSignalpOutput,NamesBLAST,MatrixBLASTOutput,Toxin)
@@ -485,7 +485,7 @@ if args.Verbose is not False:
     print ("\nMaking directory: " + (MakedirCmd))
     print ("Output BLAST file: " +  OutdirBLAST)
     print ("Output prediction file: " + OutdirPrediction)
-    if args.SignalpStatus is True:
+    if args.SignalpStatus == 'True':
         print ("Output SignalP file: " + OutdirSigP)
     if args.BenchmarkFile is not None:
         print ("Output performance file: " + OutdirPerformance)
@@ -497,6 +497,6 @@ if args.Verbose is not False:
         print("\nBLASTp system call for web mode:\n" + BLASTCmd_Web)
     else:
         print("\nBLASTp system call for UNIX mode:\n" + BLASTCmd_UNIX)
-    if args.SignalpStatus is True:
+    if args.SignalpStatus == 'True':
         SignalpCmd = "signalp -n " + OutdirSigP + " " + args.InputFile
         print("\nSignalp system call:\n" + SignalpCmd)
