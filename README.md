@@ -6,4 +6,4 @@ The .py and .sh files are programs. Whereas the .fa files contains protein seque
 modified by SortingDuplicates.py. These .fa files are used as input for both PerformanceLoop.sh and NaiveToxPred.py. 
 The .txt files are created by PerformanceLoop.sh and NaiveToxPred.py, thus output files from the two programs.
 
-The numbered files corresponds to three case studies, each case running two tests creating different output.
+The numbered files corresponds to three case studies, each case running various tests, which creates different outputs.

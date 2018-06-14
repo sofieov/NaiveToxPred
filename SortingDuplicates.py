@@ -15,8 +15,8 @@ import os
 ######################################################################
 ########################### Variables ################################
 ######################################################################
-file = os.path.abspath("Dataset_Uniprot_AnimalToxins_All.fa")
-outputfile = 'Dataset_Sorted_AnimalToxins_All.fa'
+file = os.path.abspath("Uniprot_VenomToxinsData.fa")
+outputfile = 'VenomToxinsData.fa'
 
 ######################################################################
 ########################### Funktioner ###############################

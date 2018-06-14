@@ -1,4 +1,4 @@
-Identifier	SPstart	SPend	SPscore	SP?	BLASToutput	Evalue	Toxin?
+Identifier	SPstart	SPend	SPscore	SP	BLAST	Evalue	Toxin
 AAB25587.1	-	-	-	No	Yes	2e-49	No
 AAF37261.1	-	-	-	No	No	-	No
 AAG17442.1	-	-	-	No	No	-	No

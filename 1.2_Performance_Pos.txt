@@ -1,1 +1,1 @@
-##By evalue 1.00e-13: TP = 7376, FP = 0, TN = 0, FN = 717, Accuracy = 0.9114
+##When the evalue is 1.00e-13: TP = 7376, FP = 0, TN = 0, FN = 717, Accuracy = 0.9114

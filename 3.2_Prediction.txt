@@ -1,4 +1,4 @@
-Identifier	BLASToutput	Evalue	Toxin?
+Identifier	BLAST	Evalue	Toxin
 AAB25587.1	Yes	2e-49	Yes
 AAF37261.1	No	-	No
 AAG17442.1	No	-	No

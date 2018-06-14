@@ -1,4 +1,3 @@
-
 When the evalue is 1.00e-10: TP = 7497, FP = 8567, TN = 54014, FN = 596, Accuracy = 0.87, PPV = 0.47, NPV = 0.99, Sensitivity = 0.93, Specificity = 0.86, F1 = 0.45, MCC = 0.5999
 When the evalue is 1.00e-11: TP = 7453, FP = 8318, TN = 54263, FN = 640, Accuracy = 0.87, PPV = 0.47, NPV = 0.99, Sensitivity = 0.92, Specificity = 0.87, F1 = 0.45, MCC = 0.6027
 When the evalue is 1.00e-12: TP = 7410, FP = 8157, TN = 54424, FN = 683, Accuracy = 0.87, PPV = 0.48, NPV = 0.99, Sensitivity = 0.92, Specificity = 0.87, F1 = 0.46, MCC = 0.6034
@@ -7,6 +6,7 @@ When the evalue is 1.00e-14: TP = 7327, FP = 7908, TN = 54673, FN = 766, Accurac
 When the evalue is 1.00e-15: TP = 7273, FP = 7787, TN = 54794, FN = 820, Accuracy = 0.88, PPV = 0.48, NPV = 0.99, Sensitivity = 0.90, Specificity = 0.88, F1 = 0.46, MCC = 0.6021
 When the evalue is 1.00e-16: TP = 7211, FP = 7615, TN = 54966, FN = 882, Accuracy = 0.88, PPV = 0.49, NPV = 0.98, Sensitivity = 0.89, Specificity = 0.88, F1 = 0.46, MCC = 0.6017
 When the evalue is 1.00e-17: TP = 7159, FP = 7464, TN = 55117, FN = 934, Accuracy = 0.88, PPV = 0.49, NPV = 0.98, Sensitivity = 0.88, Specificity = 0.88, F1 = 0.46, MCC = 0.6016
+When the evalue is 1.00e-20: TP = 6939, FP = 6978, TN = 55603, FN = 1154, Accuracy = 0.88, PPV = 0.50, NPV = 0.98, Sensitivity = 0.86, Specificity = 0.89, F1 = 0.46, MCC = 0.5973
 When the evalue is 1.00e-30: TP = 6453, FP = 5848, TN = 56733, FN = 1640, Accuracy = 0.89, PPV = 0.52, NPV = 0.97, Sensitivity = 0.80, Specificity = 0.91, F1 = 0.46, MCC = 0.5912
 When the evalue is 1.00e-45: TP = 5073, FP = 4321, TN = 58260, FN = 3020, Accuracy = 0.90, PPV = 0.54, NPV = 0.95, Sensitivity = 0.63, Specificity = 0.93, F1 = 0.41, MCC = 0.5232
 When the evalue is 1.00e-60: TP = 2671, FP = 3620, TN = 58961, FN = 5422, Accuracy = 0.87, PPV = 0.42, NPV = 0.92, Sensitivity = 0.33, Specificity = 0.94, F1 = 0.23, MCC = 0.3044
